@@ -87,7 +87,7 @@ def make_pairs(x,y):
                 elif pairs[pair] != sim:
                     # it's related to the notitle
                     pairs[pair] = max(sim, pairs[pair])
-        if cnt > config.ir_size: print "Too many windows:{}".format(cnt)
+        if cnt > config.ir_size: print("Too many windows:{}".format(cnt))
     ret_pair = []
     for k in pairs:
         #pdb.set_trace()
@@ -110,9 +110,9 @@ def make_pairs(x,y):
     return (ret_q, ret_a, ret_sim)
 
 if __name__ == "__main__":
-    print "Evaluating coverage"
-    print evaluate(test_q, test_a, notitle = False)
-    print evaluate(test_q, test_a, notitle = True)
+    print("Evaluating coverage")
+    print(evaluate(test_q, test_a, notitle = False))
+    print(evaluate(test_q, test_a, notitle = True))
     
     train_pairs = make_pairs(train_q, train_a)
     dump_to_file(train_pairs, train_file_path)

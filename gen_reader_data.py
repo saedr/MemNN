@@ -152,4 +152,4 @@ if __name__ == "__main__":
     dump_to_file(test_pairs, test_file_path)
     
     #test_pairs = load_from_file(test_file_path)
-    print evaluate(test_pairs)
+    print(evaluate(test_pairs))

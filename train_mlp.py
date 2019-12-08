@@ -39,10 +39,10 @@ def train():
         loss = model.forward(i_q, i_a, i_s)
         loss.backward()
         optimizer.step()
-        print "Training loss", loss.data.sum()
+        print("Training loss", loss.data.sum())
         cnt += 1
         if cnt % config.valid_every == 0:
             loss = model.forward(dev_q_t, dev_a_t, dev_sim_t)
-            print "Validation loss", loss.data.sum()
+            print("Validation loss", loss.data.sum())
 train()
 model.save(config.pre_embed_file)

@@ -7,7 +7,7 @@ import pdb
 import torch
 import torch.autograd as autograd
 import torch.nn as nn
-from torch.legacy.nn import CosineEmbeddingCriterion
+# from torch.legacy.nn import CosineEmbeddingCriterion
 import torch.nn.functional as F
 import torch.optim as optim
 

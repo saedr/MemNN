@@ -6,8 +6,8 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.autograd import Variable
-from torch.legacy.nn import CosineEmbeddingCriterion
-from torch.legacy.nn import Sum
+# from torch.legacy.nn import CosineEmbeddingCriterion
+# from torch.legacy.nn import Sum
 import pdb
 
 class MLP(nn.Module):
